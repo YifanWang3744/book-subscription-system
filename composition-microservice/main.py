@@ -14,7 +14,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],#http://localhost:3000
+    allow_origins=['*'], #http://localhost:3000
     allow_methods=['*'],
     allow_headers=['*']
 )
@@ -27,14 +27,10 @@ ORDER_SERVER_URL = 'http://127.0.0.1:8002'
 HOST = '127.0.0.1'
 PORT = 5000
 
-# GOOGLE_CLIENT_ID = "825199395476-18br125tl2m65lnr54evfuhtlquaj8p5.apps.googleusercontent.com"
-# GOOGLE_CLIENT_SECRET = "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"
-GOOGLE_CLIENT_ID = "894307833243-qdqojkj9pd25aduconsfns23m9qo51rk.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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"
+GOOGLE_CLIENT_ID = "YOUR GOOGLE_CLIENT_ID"
+GOOGLE_CLIENT_SECRET = "YOUR GOOGLE_CLIENT_SECRET"
 app.add_middleware(SessionMiddleware, secret_key="!secret")
 
-# config = Config('.env')
-# oauth = OAuth(config)
 oauth = OAuth()
 
 CONF_URL = 'https://accounts.google.com/.well-known/openid-configuration'

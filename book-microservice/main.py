@@ -1,5 +1,3 @@
-import json
-
 from fastapi import Depends, FastAPI, Request, Form
 from fastapi.responses import HTMLResponse, JSONResponse
 from starlette.responses import RedirectResponse
@@ -21,7 +19,7 @@ model.Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],#http://localhost:3000
+    allow_origins=['*'], #http://localhost:3000
     allow_methods=['*'],
     allow_headers=['*']
 )
