@@ -10,7 +10,7 @@ This is a microservice for book service which
 ## Technologies
 
 - [FastAPI](https://fastapi.tiangolo.com/)
-- [sqlalchemy](https://www.sqlalchemy.org/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
 
 ## AWS Deployment
 
