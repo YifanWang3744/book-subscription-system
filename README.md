@@ -1,8 +1,16 @@
-# Book Subscription System on AWS
+# Cloud Bookstore on AWS
 
 ## Project Overview
 
-This full-stack project developed and deployed a cloud application of **Book Subscription System** comprised of four microservices.
+In this full-stack project, I developed and deployed a full-stack cloud Bookstore comprised of four microservices on AWS, implemented Lambda function, SNS event notification, and OAuth2 authorization.
+
+## Basic Structrue
+
+The project has three parts
+
+- Three microservices built with [FastAPI](https://fastapi.tiangolo.com/), each encapsulating a database
+- A composition microservice which implements OAuth2 login and event notification
+- A browser application built with [React](https://reactjs.org/)
 
 ## Core Functions
 
@@ -21,14 +29,6 @@ Login with Google Account.
 Implemented a Lambda function that subscribes to an event and sends me an email when an SNS event triggers the Lambda function.
 
 ![8ce239e4164adb030f1620dd100e3ec](https://user-images.githubusercontent.com/93358121/209993309-bec301c5-6add-40f5-9eb1-5fe37ee5c52e.jpg)
-
-## Basic Structrue
-
-The project has three parts
-
-- Three microservices built with [FastAPI](https://fastapi.tiangolo.com/), each encapsulating a database
-- A composition microservice which implements OAuth2 login and event notification
-- A browser application built with [React](https://reactjs.org/)
 
 ## Paths
 
